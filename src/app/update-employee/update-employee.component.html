@@ -1,39 +1,32 @@
 <div class="col-md-8 offset-md-3">
-<h2>Add Employee</h2> <br>
-<form (ngSubmit)="onSubmit()">
-
-  <div class="form-group">
-    <label> Name </label>
+  <h2>Update Employee</h2> <br>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label> Name </label>
       <input type="text" class="form-control" id="name"
              [(ngModel)]="employee.name" name="name" placeholder="Enter name"/>
-  </div>
-
-  <div class="form-group">
-    <label> Email </label>
+    </div>
+    <div class="form-group">
+      <label> Email </label>
       <input type="text" class="form-control" id="email"
              [(ngModel)]="employee.email" name="email" placeholder="Enter email"/>
-  </div>
-
-  <div class="form-group">
-    <label> Job Title </label>
+    </div>
+    <div class="form-group">
+      <label> Job Title </label>
       <input type="text" class="form-control" id="jobTitle"
              [(ngModel)]="employee.jobTitle" name="jobTitle" placeholder="Enter Job Title"/>
-
-  </div>
-
-  <div class="form-group">
-    <label> Phone Number </label>
+    </div>
+    <div class="form-group">
+      <label> Phone Number </label>
       <input type="text" class="form-control" id="phoneNumber"
              [(ngModel)]="employee.phoneNumber" name="phoneNumber" placeholder="Enter the phone number"/>
-  </div>
-
-  <div class="form-group">
-    <label> imageURL </label>
+    </div>
+    <div class="form-group">
+      <label> imageURL </label>
       <input type="text" class="form-control" id="imageURL"
              [(ngModel)]="employee.imageURL" name="imageURL" placeholder="Enter the URL of your image"/>
-  </div>
-
-  <button class="btn btn-success" type="submit">Add User</button>
-</form>
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
 </div>
 
